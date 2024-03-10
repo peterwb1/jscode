@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>javascript learning</h1>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <button title="rock" 
+        class="js-rock-button">
+        rock
+    </button> 
+    <button title="paper" onclick="
+        playGame('paper');
+        ">
+        paper
+    </button> 
+    <button title="scissors" onclick="
+        playGame('scissors');
+        ">
+        scissors
+    </button> 
+    <button title="reset score" onclick="
+        score.win = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.clear(score);
+        alert('score reset');
+        updateScoreElement();
+        ">
+        reset score
+    </button> 
+    <button onclick="autoPlay();" class="js-auto-play">Autoplay</button>
+    <button onclick="
+        subButton();
+    " class="js-sub-button subscribe-button">Subscribe
+    </button>
+    <p class="js-result-text">result</p>
+
+    <p class="js-moves-text">moves</p>
+
+    <p class="js-score-text">Score</p>
+    <div class="todo-input-grid">   
+
+        <input placeholder="Todo Name" class="js-name-input">
+
+        <input type="date" class="js-due-date-input">
+
+        <button " class="add-todo-button js-add-todo-button">Add</button>
+    </div>    
+
+    <div class="js-todo-list todo-grid">div</div>
+
+    <button onclick="" class="js-button">click</button>
+    
+
+    <script src="index.js">  
+        
+    </script>
+</body>
+</html>
